@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open sans',sans-serif;
+}
+main{
+   height:100vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: black;
+}
+.container{
+    width: 600px;
+    height: 500px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 12px;
+}
+#item{
+    width: 100%;
+    padding: 12px;
+    border:none;
+    outline: none;
+    box-shadow: 0px 0px 2px grey;
+    font-weight:bold;
+    font-size: 22px;
+    display: block;
+
+}
+#to-do-list{
+    list-style: none;
+}
+#to-do-list li{
+    padding: 12px;
+    background-color: rgb(146, 127, 127);
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    position: relative;
+    padding: 24px;
+    text-align: justify;
+    user-select: none;
+}
+#to-do-list i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.done{
+    text-decoration:line-through ;
+    background-color: brown !important;
+    color: coral;
+}
