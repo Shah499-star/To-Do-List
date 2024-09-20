@@ -1,58 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open sans',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-main{
-   height:100vh;
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-color: black;
-}
-.container{
-    width: 600px;
-    height: 500px;
-    background-color: white;
-    border-radius: 5px;
-    padding: 12px;
-}
-#item{
-    width: 100%;
-    padding: 12px;
-    border:none;
-    outline: none;
-    box-shadow: 0px 0px 2px grey;
-    font-weight:bold;
-    font-size: 22px;
-    display: block;
 
+body{
+    background-color: rgb(232, 238, 238);
 }
-#to-do-list{
-    list-style: none;
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
-#to-do-list li{
+
+.input-container{
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+}
+
+.input-container input{
+    border: none;
+    outline: none;
     padding: 12px;
-    background-color: rgb(146, 127, 127);
-    color: white;
-    border-radius: 5px;
-    margin-top: 10px;
-    position: relative;
-    padding: 24px;
-    text-align: justify;
-    user-select: none;
+    margin-block: 12px;
+    border-radius: 4px;
+    font-size: 16px;
 }
-#to-do-list i{
-    position: absolute;
-    right: 10px;
-    top: 10px;
+
+.input-container input[type="text"]{
+    width: 70%;
 }
-.done{
-    text-decoration:line-through ;
-    background-color: brown !important;
-    color: coral;
+
+.input-container input[type="button"]{
+    background-color: #3da33d;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 8px;
+    cursor: pointer;
+    padding: 12px 24px;
+}
+
+.input-container input[type="button"]:hover{
+    background-color: #60b160;
+}
+
+ul{
+    width: 50%;
+    max-width: 430px;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; */
+}
+
+ul li{
+    list-style-type: none;
+    cursor: pointer;
+    margin-block-end: 12px;
+    border-radius: 8px;
+    border: 0.125px solid #a19f9f;
+    padding: 6px 12px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.5s;
+}
+
+ul li:hover{
+    background-color: #cbcaca;
+}
+
+ul li p{
+    flex-grow: 1;
+    padding: 2px;
+}
+.btn{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.deleteBtn{
+    color: #ff0000;
+}
+
+.editBtn{
+    color: #008000;
 }
